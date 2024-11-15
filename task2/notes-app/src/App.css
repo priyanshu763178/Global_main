@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+
+  background-color: darkgray;
+  height: 100vh;
+}
+
+ .new-note {
+  text-align: center;
+  background-color: brown;
+  margin: auto;
+  height: 120px;
+  border-radius: 9px;
+  box-shadow: 10px 5px 9px rgba(0, 0, 0, 0.668);
+}
+
+.new-note input,
+.new-note textarea {
+  width: 300px;
+  margin: 10px 0;
+}
+
+.new-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid gray;
+  width: 60vw;
+
+}
+
+.notes-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  
+}
+
+.title {
+  border-radius: 15px;
+  height: 30px;
+}
+
+
+
+.btn {
+  width: 100px;
+  height: 36px;
+  border-radius: 8px;
+  color: white;
+  font-size: bold;
+  background-color: blue;
+}
+
+.NavApp{
+  margin-left: 0;
+  margin-top: 0;
+  background-color: rgb(2, 2, 25);
+  color: white;
+  font-size: bold;
+  font-weight: 300px;
+  width: 100%;
+  height: 78px;
+  align-content: center;
+}

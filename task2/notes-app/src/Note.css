@@ -1,0 +1,27 @@
+.note {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    gap: 10px; 
+ 
+  }
+  .note-content{
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(149, 145, 145);
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 9px rgba(0, 0, 0, 0.668);
+  
+  }
+
+  .btndelete {
+    width: 100px;
+    height: 36px;
+    border-radius: 8px;
+    color: white;
+    font-size: bold;
+    background-color: red;
+  }
