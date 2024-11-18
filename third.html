@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Request Example</title>
+  </head>
+  <body>
+    <h1>API Response Header Data</h1>
+    <div id="headerData">Loading...</div>
+
+    <script>
+      async function postData() {
+        const phonenumber = "1234567890";
+
+        try {
+          // Sending POST request
+          const response = await fetch("https://chimpu.online/api/post.php", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ phonenumber }),
+          });
+
+          if (response.ok) {
+            const headers = response.headers;
+            let headerData = "";
+
+            headers.forEach((value, key) => {
+              headerData += `${key}: ${value}<br/>`;
+            });
+
+            document.getElementById("headerData").innerHTML = headerData;
+          } else {
+            document.getElementById("headerData").innerHTML =
+              "Failed to fetch data from API";
+          }
+        } catch (error) {
+          document.getElementById(
+            "headerData"
+          ).innerHTML = `Error: ${error.message}`;
+        }
+      }
+
+      postData();
+    </script>
+  </body>
+</html>
